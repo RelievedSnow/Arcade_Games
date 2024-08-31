@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0; /* Remove default margin to avoid any offset */
+    background-color:chartreuse;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    width: 450px; /* Adjusted to fit the squares exactly */
+    height: 450px; /* Adjusted to fit the squares exactly */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    box-sizing: border-box; /* Ensures padding and border are included in the width and height */
+    margin: 0;
+    padding: 0;
+}
+
+.mole {
+    background-image: url(images/mole.jpeg);
+    background-size: cover;
+}
+
+#start-button{
+    border: 0;
+    border-radius: 2px;
+    margin: 8px;
+    background-color: yellow;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    outline: none;
+}

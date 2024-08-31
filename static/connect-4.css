@@ -1,0 +1,61 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/connect-4-bg.png);
+    background-size: contain;
+}
+
+h2{
+    color: white;
+    font-family: "Angkor", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin: 5px;
+}
+
+h3{
+    margin: 0;
+    color: white;
+}
+
+h4{
+    margin: 3px;
+    color: white;
+}
+
+.game-container {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.grid{
+    border: 1px solid black;
+    height: 300px;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px
+}
+
+.grid div{
+    height: 50px;
+    width: 50px;
+}
+
+.player-one {
+    background-color: red;
+    border-radius: 50px
+}
+
+.player-two {
+    background-color: blue;
+    border-radius: 50px
+}

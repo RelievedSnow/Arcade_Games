@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<form action="/signUp" method="POST">
+    <div class="form-container">
+        <h1>SignUp</h1>
+        <i class="bi bi-person-circle"></i>
+        <label for="InputEmail" class="form-label">Email Id</label>
+        <input type="text" id="email-id" name="email-id" placeholder="Enter Email Id" required>
+        <label for="InputPassword" class="form-label">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password" required>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+        <button type="submit" class="submit-btn">Submit</button>
+    </div>
+</form>
+
+{%endblock body%}

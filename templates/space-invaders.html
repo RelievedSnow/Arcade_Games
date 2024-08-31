@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='space-invaders.css')}}">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Space Invaders</h1>
+        <h2>Result: <span id="result">0</span></h2>
+        <p>Instructions: 'Use Left, Right Keys To Move. Use Up Key To Shoot' </p>
+        <div class="grid"></div>
+        <button id="start-button">Start Game</button>
+    </div>
+    <script src="{{url_for('static',filename='space-invaders.js')}}" charset="UTF-8"></script>
+</body>
+
+</html>

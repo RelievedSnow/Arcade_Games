@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='memory_game.css')}}">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Score: <span id="result"></span></h1>
+        <h3>Instructions: Click on the Card to Find the most pairs of matching cards.</h3>
+        <div class="container">
+            <div id="grid"></div>
+        </div>
+    </div>
+
+    <script src="{{url_for('static',filename='memory_game.js')}}" charset="UTF-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0; 
+    background-image: url(images/frogger_bg.jpg);
+    background-size: contain;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid{
+    border: 1px solid green;
+    height: 450px;
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(10px);
+}
+
+.grid div{
+    height: 50px;
+    width: 50px;
+}
+
+.ending-block {
+    background-image: url(images/leaf.jpeg);
+    background-size: contain;
+}
+
+.starting-block {
+    background-color: blue;
+}
+
+/* .Log-left, .Log-right{
+    background-color: lightblue;
+} */
+
+/* .car-left, .car-right{
+    background-color: lightgrey;
+} */
+
+
+.l1, .l2, .l3{
+    background-image: url(images/log.jpg);
+    background-size: contain;
+}
+
+.l4, .l5 {
+    background-image: url(images/water.jpg);
+    background-size: contain;
+}
+
+.c1 {
+    background-image: url(images/car.jpg);
+    background-size: contain;
+}
+
+.c2, .c3 {
+    background-image: url(images/highway.jpg);
+    background-size: contain;
+}
+
+.frog{
+    background-image: url(images/frog.jpg);
+    background-size: contain;
+}
+
+h3{
+    margin: 0;
+}
+
+h4{
+    margin: 0;
+}
+
+#start-pause-btn {
+    outline: none;
+    width: 100px;
+    height: 30px;
+    padding: 4px;
+    background-color:dodgerblue;
+    border: 0;
+    margin: 15px;
+    border-radius: 3px;
+    font-size: small;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#start-pause-btn:hover{
+    background-color:rgba(24, 122, 219, 0.863); 
+    cursor:pointer;
+}

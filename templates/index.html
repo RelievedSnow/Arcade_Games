@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div class="wrapper">
+    <div class="card-col">
+        <div class="card">
+            {% if username%}
+            <a href="/breakout_game"><img src="{{url_for('static',filename='images/Breakout.jpg')}}" alt="breakout_game"
+                    style="width:100%"></a>
+            <div class="card-container">
+                <h4><b><a href="/breakout_game">Breakout Game</a></b></h4>
+            </div>
+            {% else %}
+            <a onclick="alertLogin()" href="/logIn"><img src="{{url_for('static',filename='images/Breakout.jpg')}}" alt="breakout_game"
+                    style="width:100%"></a>
+            <div class="card-container">
+                <h4><b><a onclick="alertLogin()" href="/logIn">Breakout Game</a></b></h4>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="card-col">
+        <div class="card">
+            {% if username%}
+            <a href="/memory_game"><img src="{{url_for('static',filename='images/memory_game_bg.jpeg')}}" alt="memory_game"
+                    style="width:100%"></a>
+            <div class="card-container">
+                <h4><b><a href="/memory_game">Memory Game</a></b></h4>
+            </div>
+            {% else %}
+            <a onclick="alertLogin()" href="/logIn"><img src="{{url_for('static',filename='images/memory_game_bg.jpeg')}}" alt="memory_game"
+                    style="width:100%"></a>
+            <div class="card-container">
+                <h4><b><a onclick="alertLogin()" href="/logIn">Memory Game</a></b></h4>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="card-col">
+        <div class="card">
+            {% if username%}
+            <a href="/frogger_game"><img src="{{url_for('static',filename='images/frogger.jpg')}}" alt="memory_game"
+                    style="width:100%"></a>
+            <div class="card-container">
+                <h4><b><a href="/frogger_game">Frogger</a></b></h4>
+            </div>
+            {% else %}
+            <a onclick="alertLogin()" href="/logIn"><img src="{{url_for('static',filename='images/frogger.jpg')}}" alt="memory_game"
+                    style="width:100%"></a>
+            <div class="card-container">
+                <h4><b><a onclick="alertLogin()" href="/logIn">Frogger</a></b></h4>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="card-col">
+        <div class="card">
+            {% if username%}
+            <a href="/whac-a-mole"><img src="{{url_for('static',filename='images/whack-mole.jpg')}}" alt="memory_game"
+                    style="width:100%"></a>
+            <div class="card-container">
+                <h4><b><a href="/whac-a-mole">Whac-a-Mole</a></b></h4>
+            </div>
+            {% else %}
+            <a onclick="alertLogin()" href="/logIn"><img src="{{url_for('static',filename='images/whack-mole.jpg')}}" alt="memory_game"
+                    style="width:100%"></a>
+            <div class="card-container">
+                <h4><b><a onclick="alertLogin()" href="/logIn">Whac-a-Mole</a></b></h4>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="card-col">
+        <div class="card">
+            {% if username%}
+            <a href="/space-invaders"><img src="{{url_for('static',filename='images/space-invaders.jpg')}}" alt="memory_game"
+                    style="width:100%"></a>
+            <div class="card-container">
+                <h4><b><a href="/space-invaders">Space Invaders</a></b></h4>
+            </div>
+            {% else %}
+            <a onclick="alertLogin()" href="/logIn"><img src="{{url_for('static',filename='images/space-invaders.jpg')}}" alt="memory_game"
+                    style="width:100%"></a>
+            <div class="card-container">
+                <h4><b><a onclick="alertLogin()" href="/logIn">Space Invaders</a></b></h4>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="card-col">
+        <div class="card">
+            {% if username%}
+            <a href="/connect-4"><img src="{{url_for('static',filename='images/connect4.jpeg')}}" alt="memory_game"
+                    style="width:100%"></a>
+            <div class="card-container">
+                <h4><b><a href="/connect-4">Connect 4</a></b></h4>
+            </div>
+            {% else %}
+            <a onclick="alertLogin()" href="/logIn"><img src="{{url_for('static',filename='images/connect4.jpeg')}}" alt="memory_game"
+                    style="width:100%"></a>
+            <div class="card-container">
+                <h4><b><a onclick="alertLogin()" href="/logIn">Connect 4</a></b></h4>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

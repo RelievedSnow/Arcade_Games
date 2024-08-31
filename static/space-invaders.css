@@ -1,0 +1,78 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/space-invaders-bg.jpg);
+    background-size: contain;
+}
+
+.game-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    margin: 0;
+    color: yellow;
+}
+
+h2{
+    color: yellow;
+}
+
+p{
+    margin-top: 0;
+    color: white;
+}
+
+.grid {
+    width: 400px;
+    height: 400px;
+    border: 1px white solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.invader{
+    background-image: url(images/invaders.png);
+    background-size: cover;
+}
+
+.shooter{
+    background-image: url(images/ship.png);
+    background-size:cover;
+}
+
+
+.laser{
+    background-color: orange;
+}
+
+.boom{
+    background-color: red;
+}
+
+#start-button{
+    background-color: chartreuse;
+    border: 0;
+    border-radius: 2px;
+    margin: 8px;
+    outline: none;
+    font-size: 20px;
+}
+
+#restart-button{
+    background-color: chartreuse;
+    border: 0;
+    border-radius: 2px;
+    margin: 8px;
+    outline: none;
+}
